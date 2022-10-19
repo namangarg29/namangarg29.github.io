@@ -6,6 +6,22 @@
     <title>Naman Garg</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> 
+    <style>
+      i[data-arrow-status="closed"]{
+        display: inline-block;
+        transform: rotate(0deg);
+        transition: all 0.25s ease
+      }
+
+      i[data-arrow-status="open"]{
+        display: inline-block;
+        transform: rotate(90deg);
+        transition: all 0.25s ease
+      }
+
+    </style>
+
+
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
@@ -51,16 +67,16 @@
             </div>
             <div class="col-md-5">
               <h1>
-                Bio
+                About Me
               </h1>
               <p>
                 I'm a PhD candidate in Economics at Columbia University. I am on the job market during the 2022-2023 cycle.
               </p>
               <p>
-                My research interest are Political Economy and Development Economics, with particular focus on the economics of news media and ethnic conflict in low-income countries.
+                My research interests are in Political Economy and Development Economics with a focus on the economics of news media and ethnic conflict in low-income countries.
               </p>
               <p>
-                For more information, please see my <a href = "https://assets.namangarg.net/cv/columbia_format.pdf" target = "_blank">CV</a> or contact me at <a href="mailto:naman.garg@columbia.edu">naman.garg@columbia.edu</a>
+                For more information, please see my <a href = "https://assets.namangarg.net/cv/columbia_format.pdf" target = "_blank">CV</a> or contact me at naman.garg@columbia.edu
               </p>
                 
 
@@ -79,27 +95,33 @@
               Research
             </h1>
             
-              <h3 class="pt-4">Job Market Paper</h3>
-              <div>
-              <a href="https://assets.namangarg.net/papers/jmp_latest.pdf" target="_blank"><span class="fw-bold fs-5">Learning to Resist Misinformation: A Field Experiment in India</span></a><span class="fw-light"> (with Monika Yadav)</span> <br>
+              <div class="pt-3"><span class="h2">Working Papers</span></div>
+              <div class="pt-3">
+                <span class = "fw-bold">Job Market Paper</span><br>
+              <a href="https://assets.namangarg.net/papers/jmp_latest.pdf" target="_blank"><span class="fw-bold fs-6">Learning to Resist Misinformation: A Field Experiment in India</span></a><span> <small><i>(with Monika Yadav)</i></small></span> <br>
               <div class="collapse.show pt-1" id="jmpDetails">                  
                   <p class="text-justify">
-                  <b>Abstract: </b> Can people learn to identify misinformation? In this paper, we conduct a large field experiment (N=1301) in the state of Uttar Pradesh in India, with an intervention aimed at improving people’s ability to discern the veracity of information. The intervention is to provide regular weekly digests with a compilation of fact-checks of viral misinformation. The intervention helps identify fake news, as treated individuals are eleven percentage points less likely to say that a false statement is true. However, it also decreases beliefs in true statements by four percentage points. We estimate a structural model to disentangle the two mechanisms of impact: truth discernment, which helps distinguish between false and true statements; and skepticism, which changes general credulity for both false and true statements. We find that the impacts are driven by both an increase in truth discernment and skepticism. The intervention also reduces misperceptions about minorities, but the effect on related policy attitudes is much smaller and statistically insignificant. 
+                  <i>Abstract</i>: Can people learn to identify misinformation? In this paper, we conduct a large field experiment (N=1301) in the state of Uttar Pradesh in India, with an intervention aimed at improving people's ability to discern the veracity of information. The intervention is to provide regular weekly digests with a compilation of fact-checks of viral misinformation. The intervention helps identify fake news, as treated individuals are eleven percentage points less likely to say that a false statement is true. However, it also decreases beliefs in true statements by four percentage points. We estimate a structural model to disentangle the two mechanisms of impact: truth discernment, which helps distinguish between false and true statements; and skepticism, which changes general credulity for both false and true statements. We find that the impacts are driven by both an increase in truth discernment and skepticism. The intervention also reduces misperceptions about minorities, but the effect on related policy attitudes is much smaller and statistically insignificant. 
                 </p>
             </div>
           </div>
 
-            <h4 class = "pt-4"> Working Papers</h4>
+<hr>
             <div>
-              <a data-bs-toggle="collapse" href="#ethnicViolenceDetails"><span class="fw-bold fs-6">Ethnic Violence and Economic Growth</span></a><br>
-              <div class="collapse pt-1" id="ethnicViolenceDetails">                  
+              <div onclick="toggleElement('.ethnicViolenceToggle'); toggleArrow('.ethnicViolenceArrow');">
+              <i class="bi bi-caret-right-fill ethnicViolenceArrow" data-arrow-status="closed"></i>
+              <span class="fw-bold fs-6" >
+                Ethnic Violence and Economic Growth
+              <br></span><small><i>(Draft available on request)</i></small><br>
+            </div>
+              <div class="collapse pt-1 ethnicViolenceToggle">                  
                   <p class="text-justify">
-                  <b>Abstract: </b> I estimate the impact of ethnic violence on economic growth using data on
+                    <i><u>Abstract</u>: </i>I estimate the impact of ethnic violence on economic growth using data on
                   Hindu-Muslim riots in India. For identificaiton, I use shift-share instruments
                   to isolate exogenous national shocks to violence from endogenous local shocks.
                   On average, a riot reduces state GDP growth rate by 0.14 percentage points.
                   This creates a vicious cycle when one also considers the impact in opposite
-                  direction – lower growth leading to more violence. The multiplier due to this
+                  direction — lower growth leading to more violence. The multiplier due to this
                   vicious cycle magnifies the impact of external growth shocks by 40 percent in
                   equilibrium. There is suggestive evidence that impact of violence on growth is
                   driven by reduction in social capital from higher animosity and discrimination
@@ -107,11 +129,12 @@
                 </p>
             </div>
           </div>
-
-          <h4 class = "pt-5"> Work in Progress</h4>
-          <div>
-            <a data-bs-toggle="collapse" href="#nightLightsDetails"><span class="fw-bold fs-6">Where is the Boundary: Using night lights to construct panel of city shapes
-            </span></a><br>
+<hr>
+          <div class="pt-5"><span class="h2"> Work in Progress</span></div>
+          <div class="pt-3">
+            <i class="bi bi-caret-right-fill nightLightsArrow" data-arrow-status="closed"></i>
+            <span class="fw-bold fs-6" onclick="toggleElement('#nightLightsDetails'); toggleArrow('.nightLightsArrow');">Where is the Boundary: Using night lights to construct panel of city shapes
+            </span><br>
             <div class="collapse pt-1" id="nightLightsDetails">                  
                 <p class="text-justify">
                   In this project I use night lights data to construct a worldwide panel of city shapes and sizes. I
@@ -123,10 +146,11 @@
               </p>
           </div>
         </div>
-
-        <div class = "pt-4">
-          <a data-bs-toggle="collapse" href="#colonialDetails"><span class="fw-bold fs-6">Colonial Origins of Ethnic Conflict
-          </span></a><br>
+<hr>
+        <div class = "pt-2">
+          <i class="bi bi-caret-right-fill colonialArrow" data-arrow-status="closed"></i>
+          <span class="fw-bold fs-6" onclick="toggleElement('#colonialDetails'); toggleArrow('.colonialArrow');">Colonial Origins of Ethnic Conflict
+          </span><br>
           <div class="collapse pt-1" id="colonialDetails">                  
               <p class="text-justify">
                 In this project I explore the role of colonial institutions on contemporary ethnic relations by
@@ -146,5 +170,20 @@ where native kings had much more power.
         <hr style = "padding-bottom: 5cm;">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      // Function to toggle element using 
+      function toggleElement(selector){$(selector).slideToggle(250);}
+      
+      function toggleArrow(selector){
+        // toggle data attribute of arrow
+        val = $(selector).attr('data-arrow-status');
+        if (val == 'open'){
+          $(selector).attr('data-arrow-status', 'closed');
+        } else {
+          $(selector).attr('data-arrow-status', 'open');
+        }
+      }
+    </script>
   </body>
 </html>
