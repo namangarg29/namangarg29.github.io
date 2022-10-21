@@ -19,6 +19,7 @@
         transition: all 0.25s ease
       }
 
+      button.link { background:none; border:none; padding: 0}
     </style>
 
 
@@ -139,9 +140,10 @@
 <hr>
           <div class="pt-1"><span class="h2"> Work in Progress</span></div>
           <div class="pt-3">
+            <button class = "link" onclick="toggleElement('#nightLightsDetails'); toggleArrow('.nightLightsArrow');">
             <i class="bi bi-caret-right-fill nightLightsArrow" data-arrow-status="closed"></i>
-            <span class="fw-bold fs-6" onclick="toggleElement('#nightLightsDetails'); toggleArrow('.nightLightsArrow');">Where is the Boundary: Using night lights to construct panel of city shapes
-            </span><br>
+            <span class="fw-bold fs-6">Where is the Boundary: Using night lights to construct panel of city shapes
+            </span></button><br>
             <div class="collapse pt-1" id="nightLightsDetails">                  
                 <p class="text-justify">
                   I use night lights data to construct a worldwide panel of city shapes and sizes. Existing methods define a city as contiguous pixels with high light intensity, using an arbitray intensity threshold to define the boundary.
@@ -152,9 +154,10 @@
         </div>
 
         <div class = "pt-3">
+          <button class = "link" onclick="toggleElement('#colonialDetails'); toggleArrow('.colonialArrow');">
           <i class="bi bi-caret-right-fill colonialArrow" data-arrow-status="closed"></i>
-          <span class="fw-bold fs-6" onclick="toggleElement('#colonialDetails'); toggleArrow('.colonialArrow');">Colonial Origins of Ethnic Conflict
-          </span><br>
+          <span class="fw-bold fs-6">Colonial Origins of Ethnic Conflict
+          </span></button><br>
           <div class="collapse pt-1" id="colonialDetails">                  
               <p class="text-justify">
                 In this project I explore the long-term impact of colonial institutions on contemporary ethnic relations by
